@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* CSS cho canvas chữ rơi */
+#fallingTextCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Canvas chữ rơi nằm dưới cùng */
+}
+
+/* CSS cho canvas chữ chạy ngang */
+#runningTextCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Canvas chữ chạy ngang nằm trên canvas chữ rơi */
+}
+
+/* CSS cho nút */
+#actionButton {
+    display: none; /* Ẩn mặc định */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #f584b7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; /* Nút nằm trên cùng */
+}
+
+#actionButton:hover {
+    background-color: #ed3073;
+}
